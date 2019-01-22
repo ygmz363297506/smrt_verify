@@ -33,6 +33,7 @@
           <element id="library" level="project" name="Maven: org.springframework:spring-aop:4.3.18.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-web:4.3.18.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:4.3.18.RELEASE" />
+          <element id="library" level="project" name="Maven: org.freemarker:freemarker:2.3.28" />
           <element id="library" level="project" name="Maven: org.springframework:spring-tx:4.3.18.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-jdbc:4.3.18.RELEASE" />
           <element id="library" level="project" name="Maven: org.apache.logging.log4j:log4j-api:2.10.0" />

@@ -35,7 +35,6 @@ public class UserController extends BaseController {
     @RequestMapping(value = "/login", method = RequestMethod.POST)
     public R login(HttpServletRequest request, @RequestParam String userName, @RequestParam String password, String ipAddress, Boolean isAuto) {
         try {
-
             UserEntity user = this.userService.login(userName, MD5Utils.encrypt(userName,password));
             if (user != null) {
                 String cookie = MD5Utils.getToken();
@@ -60,7 +59,6 @@ public class UserController extends BaseController {
         if (cookies == null || cookies.length == 0) {
             return true;
         }
-
         for (Cookie cookie : cookies) {
             if (cookie.getName().equals("token") || cookie.getName().equals("systoken")) {
                 cookie.setMaxAge(0);

@@ -67,6 +67,7 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-aop:4.3.18.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-web:4.3.18.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-webmvc:4.3.18.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.freemarker:freemarker:2.3.28" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-tx:4.3.18.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-jdbc:4.3.18.RELEASE" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: junit:junit:4.12" level="project" />
