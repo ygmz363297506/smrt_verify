@@ -56,7 +56,7 @@ public class DEVDataController extends BaseController {
 	@RequestMapping(value = "/changingPMState", method = RequestMethod.POST)
 	@ResponseBody
 	public Object ChangingPMState(HttpServletResponse response, @RequestParam int pmid,@RequestParam int state) {
-        //todo 数据解析
+        //TODO 数据解析
 		return  R.newSuccess();
 	} 
 	/**
@@ -68,8 +68,7 @@ public class DEVDataController extends BaseController {
 	@RequestMapping(value = "/dataCollection", method = RequestMethod.POST)
 	@ResponseBody
 	public Object storageDataCollection( HttpServletResponse response,@RequestBody String data) {
-
-
+		//TODO
 		return  R.newSuccess();
 	}
 
@@ -87,6 +86,4 @@ public class DEVDataController extends BaseController {
            this.influxDB.write(batchPoints);
 		}
 	}
-
-
 }
