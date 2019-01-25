@@ -6,7 +6,6 @@ import com.smartcold.manage.cold.util.R;
 import org.influxdb.InfluxDB;
 import org.influxdb.dto.BatchPoints;
 import org.influxdb.dto.Point;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
@@ -16,9 +15,9 @@ import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.concurrent.TimeUnit;
 
 /**
- * 北京中威DEV数据接口 第二代
- * @author Administrator
- *
+ *  设备数据上传
+ *  @author maqiang34
+ *  v0.0.1
  */
 @Controller
 public class DEVDataController extends BaseController {
