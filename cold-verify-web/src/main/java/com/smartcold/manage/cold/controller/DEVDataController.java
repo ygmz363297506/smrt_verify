@@ -2,31 +2,16 @@ package com.smartcold.manage.cold.controller;
 
 import com.google.gson.Gson;
 import com.google.gson.JsonElement;
-import com.google.gson.reflect.TypeToken;
-import com.smartcold.manage.cold.controller.BaseController;
-import com.smartcold.manage.cold.dao.newdb.DevStatusMapper;
-import com.smartcold.manage.cold.dao.newdb.StorageDataCollectionMapper;
-import com.smartcold.manage.cold.dto.DataResultDto;
-import com.smartcold.manage.cold.entity.newdb.CoeffMode;
-import com.smartcold.manage.cold.entity.newdb.StorageDataCollectionEntity;
-import com.smartcold.manage.cold.service.redis.DataCacheService;
-import com.smartcold.manage.cold.service.task.CommDevService;
 import com.smartcold.manage.cold.util.R;
-import com.smartcold.manage.cold.util.SetUtil;
-import com.smartcold.manage.cold.util.StringUtil;
-import com.smartcold.manage.cold.util.TimeUtil;
 import org.influxdb.InfluxDB;
 import org.influxdb.dto.BatchPoints;
 import org.influxdb.dto.Point;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Required;
-import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
+import javax.annotation.Resource;
 import javax.servlet.http.HttpServletResponse;
-import java.util.*;
-import java.util.Map.Entry;
 import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.concurrent.TimeUnit;
 
@@ -38,7 +23,7 @@ import java.util.concurrent.TimeUnit;
 @Controller
 public class DEVDataController extends BaseController {
 
-	@Autowired
+	@Resource
 	private InfluxDB influxDB;
 
 
